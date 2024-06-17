@@ -1,0 +1,15 @@
+/* external css: flickity.css */
+
+* { 
+  box-sizing: border-box; 
+}
+
+.carousel {
+  background: white;
+}
+
+.carousel img {
+  display: block;
+  height: 300px;
+  margin-right: 20px;
+}

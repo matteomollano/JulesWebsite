@@ -1,0 +1,80 @@
+@import url('https://fonts.cdnfonts.com/css/socake');
+
+h1 {
+    text-align: center;
+    font-family: 'Socake', sans-serif;
+    font-size: 40px;
+    color: #ff539b;
+
+    padding-top: 20px;
+    margin-bottom: 0px;
+}
+
+#brand {
+    font-family: 'Socake', sans-serif;
+    font-size: 30px;
+    color: #ff539b;
+}
+
+@media (max-width: 991px) {
+    h1 {
+        display: none;
+    }
+}
+
+@media (min-width: 992px) {
+    #brand {
+        display: none;
+    }
+}
+
+#home-page, #shop, #favorites, #locations, #all-about-juliet, #customer-service, #donations, #music {
+    padding-left: 14px;
+    padding-right: 14px;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    border-radius: 10px;
+    margin-right: 12px;
+    margin-top: 7px;
+    margin-bottom: 7px;
+}
+
+#home-page {
+    background-color: #FF9090;
+    width: 72px;
+}
+
+#shop {
+    background-color: #FFD166;
+    width: 67px;
+}
+
+#favorites {
+    background-color: lightblue;
+    width: 95px;
+}
+
+#locations {
+    background-color: lemonchiffon;
+    width: 100px;
+}
+
+#all-about-juliet {
+    background-color: #ecd7ff;
+    width: 134px;
+}
+
+#customer-service {
+    background-color: #DEF0B6;
+    width: 160px;
+}
+
+#donations {
+    background-color: #72C7AE;
+    width: 100px;
+}
+
+#music {
+    background-color: #8390FA;
+    width: 70px;
+}
