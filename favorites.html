@@ -1,0 +1,52 @@
+<!DOCTYPE HTML>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Jules</title>
+        <link rel="stylesheet" href="styles/shop.css">
+        <script src="//code.jquery.com/jquery.min.js"></script>
+        <script>
+            $.get("navbar.html", function(data){
+                $(".nav-placeholder").replaceWith(data);
+            });
+        </script>
+    </head>
+    <body>
+        <div class="nav-placeholder"></div>
+
+        <div class="dropdown mt-2 ms-2">
+            <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Favorites Selection
+            </button>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="javascript:void(0);" onclick="showContent('shop-items')">Shop Items</a></li>
+              <li><a class="dropdown-item" href="javascript:void(0);" onclick="showContent('songs')">Songs</a></li>
+              <li><a class="dropdown-item" href="javascript:void(0);" onclick="showContent('all')">All</a></li>
+            </ul>
+        </div>
+
+        <div id="shop-items" class="favorites-section">
+            <p class="favorites-header">Shop Items</p>
+            <div class="favorites-grid"></div>
+        </div>
+
+        <div id="songs" class="favorites-section">
+            <p class="favorites-header">Songs</p>
+            <table class="music-table table table-hover">
+                <thead>
+                    <tr>
+                        <th scope="col">Favorite</th>
+                        <th scope="col">Song Name</th>
+                        <th scope="col">Artist</th>
+                        <th scope="col">Link</th>
+                    </tr>
+                </thead>
+                <tbody>
+                </tbody>
+            </table>
+        </div>
+        
+        <script src="scripts/favorites.js"></script>
+    </body>
+</html>

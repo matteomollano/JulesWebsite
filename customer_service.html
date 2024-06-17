@@ -1,0 +1,31 @@
+<!DOCTYPE HTML>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Jules</title>
+        <link rel="stylesheet" href="styles/shop.css">
+        <script src="//code.jquery.com/jquery.min.js"></script>
+        <script>
+            $.get("navbar.html", function(data){
+                $(".nav-placeholder").replaceWith(data);
+            });
+        </script>
+    </head>
+    <body>
+        <div class="nav-placeholder"></div>
+        <p>customer service page</p>
+        <p>
+            Dear Karen (or whoever else is reading this). I'm so sorry to tell you but whatever problem you're facing we can't help
+            you. But if you insist in telling us or it is a glitch in the website pls say it in the box below.
+        </p>
+        <form>
+            <label for="fullname">Enter your name here: </label>
+            <input type="text" id="name" name="fullname"><br>
+            <div class="issueform">
+                <label for="issue">Enter your issue here: </label> <br>
+                <textarea id="issue" name="issue" rows="5" cols="50"> </textarea>
+            </div>
+        </form>
+    </body>
+</html>

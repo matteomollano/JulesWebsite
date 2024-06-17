@@ -1,0 +1,76 @@
+<!DOCTYPE HTML>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Jules</title>
+        <link rel="stylesheet" href="./styles/shop.css">
+        <script src="//code.jquery.com/jquery.min.js"></script>
+        <script>
+            $.get("navbar.html", function(data){
+                $(".nav-placeholder").replaceWith(data);
+            });
+        </script>
+    </head>
+    <body>
+        <div class="nav-placeholder"></div>
+        <div class="grid">
+
+            <!-- Sephora Item -->
+            <div class="website-link">
+                <div>
+                    <p class="product-name">
+                        Sol De Janeiro
+                    </p>
+                </div>
+                <div>
+                    <img class="product-image" id="sephora-image" src="./images/Sol De Jainero.png">
+                </div>
+                <div>
+                    <a class="website-button" target="_blank" href="https://www.sephora.com/product/sol-de-janeiro-brazilian-crush-cheriosa-40-hair-body-fragrance-mist-P472072?skuId=2461812&icid2=products%20grid:p472072:product">Sephora</a>
+                    <button class="favorites-button">
+                        <img class="clear-heart" src="images/heart-clear.png">
+                    </button>
+                </div>
+            </div>
+
+            <!-- lululemon Item -->
+            <div class="website-link">
+                <div>
+                    <p class="product-name">
+                        Define Jacket
+                    </p>
+                </div>
+                <div>
+                    <img class="product-image" id="lulu-image" src="./images/lulu.webp">
+                </div>
+                <div>
+                    <a class="website-button" target="_blank" href="https://shop.lululemon.com/p/jackets-and-hoodies-jackets/Nulu-Cropped-Define-Jacket/_/prod10930188?color=0001">lululemon</a>
+                    <button class="favorites-button">
+                        <img class="clear-heart" src="images/heart-clear.png">
+                    </button>
+                </div>
+            </div>       
+
+            <!-- Whitefox Item -->
+            <div class="website-link">
+                <div>
+                    <p class="product-name">
+                        Offstage Hoodie
+                    </p>
+                </div>
+                <div>
+                    <img class="product-image" src="images/whitefox-hoodie.webp">
+                </div>
+                <div>
+                    <a class="website-button" target="_blank" href="https://whitefoxboutique.com/products/offstage-hoodie-glacier-grey?currency=USD&utm_source=google&utm_medium=cpc&utm_campaign=google%2Bshopping&gad_source=1&gclid=EAIaIQobChMIoa2ojobWhAMVlm5HAR23FwL5EAQYASABEgJY6PD_BwE&variant=40880654843964">Whitefox</a>
+                    <button class="favorites-button">
+                        <img class="clear-heart" src="images/heart-clear.png">
+                    </button>
+                </div>
+            </div>
+
+        </div>
+        <script src="scripts/shop.js"></script>
+    </body>
+</html>

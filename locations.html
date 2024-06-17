@@ -1,0 +1,30 @@
+<!DOCTYPE HTML>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Jules</title>
+        <link rel="stylesheet" href="styles/locations.css">
+        <script src="//code.jquery.com/jquery.min.js"></script>
+        <script>
+            $.get("navbar.html", function(data){
+                $(".nav-placeholder").replaceWith(data);
+            });
+        </script>
+    </head>
+    <body>
+        <div class="nav-placeholder"></div>
+        <p class="location-name">Locations</p>
+
+        <div class="content">
+            <div class="map">
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3023.1259176591016!2d-73.61411392458085!3d40.73725473607014!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c27da2ab1ad48f%3A0xc2462f2dfe999924!2sSEPHORA!5e0!3m2!1sen!2sus!4v1707581886930!5m2!1sen!2sus"
+                    width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade">
+                </iframe>
+            </div>
+        </div>
+        
+    </body>
+</html>

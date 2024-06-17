@@ -1,0 +1,101 @@
+<!DOCTYPE HTML>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Jules</title>
+        <!-- <link rel="stylesheet" href="styles/music.css"> -->
+        <link rel="stylesheet" href="styles/shop.css">
+        <script src="//code.jquery.com/jquery.min.js"></script>
+        <script>
+            $.get("navbar.html", function(data){
+                $(".nav-placeholder").replaceWith(data);
+            });
+        </script>
+    </head>
+    <body>
+        <div class="nav-placeholder"></div>
+        <table class="table table-hover">
+
+            <thead>
+              <tr>
+                <th scope="col">Favorite</th>
+                <th scope="col">Song Name</th>
+                <th scope="col">Artist</th>
+                <th scope="col">Link</th>
+              </tr>
+            </thead>
+
+            <tbody>
+
+              <tr>
+                <th scope="row">
+                  <button class="favorites-button">
+                    <img class="clear-heart" src="images/heart-clear.png">
+                  </button>
+                </th>
+                <td class="song-name">Obsessed</td>
+                <td class="artist">Olivia Rodrigo</td>
+                <td class="song-link">
+                    <a class="website-button" target="_blank" href="https://www.youtube.com/watch?v=QXcjPySjdJU">Play</a>
+                </td>
+              </tr>
+
+              <tr>
+                <th scope="row">
+                  <button class="favorites-button">
+                    <img class="clear-heart" src="images/heart-clear.png">
+                  </button>
+                </th>
+                <td class="song-name">Can't Catch Me Now</td>
+                <td class="artist">Olivia Rodrigo</td>
+                <td class="song-link">
+                  <a class="website-button" target="_blank" href="https://www.youtube.com/watch?v=GlM6lcFbLSg">Play</a>
+                </td>
+              </tr>
+
+              <tr>
+                <th scope="row">
+                  <button class="favorites-button">
+                    <img class="clear-heart" src="images/heart-clear.png">
+                  </button>
+                </th>
+                <td class="song-name">Espresso</td>
+                <td class="artist">Sabrina Carpenter</td>
+                <td class="song-link">
+                  <a class="website-button" target="_blank" href="https://open.spotify.com/track/2qSkIjg1o9h3YT9RAgYN75?si=2c5e951d2ff54dc8">Play</a>
+                </td>
+              </tr>
+
+              <tr>
+                <th scope="row">
+                  <button class="favorites-button">
+                    <img class="clear-heart" src="images/heart-clear.png">
+                  </button>
+                </th>
+                <td class="song-name">Risk</td>
+                <td class="artist">Gracie Abrams</td>
+                <td class="song-link">
+                  <a class="website-button" target="_blank" href="https://open.spotify.com/track/73c7iqH4lCVqu4tm66i0tY?si=05b0f3d552dc4b90">Play</a>
+                </td>
+              </tr>
+
+              <tr>
+                <th scope="row">
+                  <button class="favorites-button">
+                    <img class="clear-heart" src="images/heart-clear.png">
+                  </button>
+                </th>
+                <td class="song-name">The Code</td>
+                <td class="artist">Nemo</td>
+                <td class="song-link">
+                  <a class="website-button" target="_blank" href="https://open.spotify.com/track/1EjIXKhNHI00ZLMRpS8iz8?si=4d0b1e8e8ee94420">Play</a>
+                </td>
+              </tr>
+
+            </tbody>
+            
+          </table>
+          <script src="scripts/music.js"></script>
+    </body>
+</html>

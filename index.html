@@ -1,0 +1,52 @@
+<!DOCTYPE HTML>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Jules</title>
+        <link rel="stylesheet" href="styles/home_page.css">
+        <link rel="stylesheet" href="styles/carousel.css">
+        <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
+        <script src="//code.jquery.com/jquery.min.js"></script>
+        <script>
+            $.get("navbar.html", function(data){
+                $(".nav-placeholder").replaceWith(data);
+            });
+        </script>
+    </head>
+    <body>
+        <div class="nav-placeholder"></div>
+        <div class="page">
+            <p class="title">
+                Try out these brands!
+            </p>
+
+            <div class="carousel" data-flickity='{"wrapAround": true}'>
+                <a href="https://shop.lululemon.com" target="_blank">
+                    <img id="lulu-logo" src="images/lululogo.jpeg">
+                </a>
+
+                <a href="https://www.urbanoutfitters.com/" target="_blank">
+                    <img src="images/urban-outfitters-logo.png">
+                </a>
+                
+                <a href="https://soldejaneiro.com/" target="_blank">
+                    <img src="images/sol-de-janeiro-logo.png">
+                </a>
+                
+                <a href="https://www.ae.com/us/en/c/aerie/cat4840006?pagetype=clp" target="_blank">
+                    <img src="images/aerie-logo.jpeg">
+                </a>
+                
+                <a href="https://www.nike.com/" target="_blank">
+                    <img src="images/nike-logo.jpeg">
+                </a>
+
+                <a href="https://www.aviatornation.com/" target="_blank">
+                    <img src="images/aviator-nation-logo.avif">
+                </a>
+            </div>
+        </div>
+        <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
+    </body>
+</html>
