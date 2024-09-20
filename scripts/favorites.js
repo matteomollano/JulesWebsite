@@ -61,7 +61,7 @@ function addFavoritedSong(songName, artist, songLink) {
     tbody.appendChild(newSongRow);
 }
 
-// sbows or hides a div based on user's selection
+// shows or hides a div based on user's selection
 function showContent(selectedOption) {
     const shopItems = document.getElementById('shop-items');
     const songs = document.getElementById('songs');
