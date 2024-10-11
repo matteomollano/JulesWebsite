@@ -7,12 +7,13 @@
         <link rel="stylesheet" href="styles/home_page.css">
         <link rel="stylesheet" href="styles/carousel.css">
         <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css">
         <script src="//code.jquery.com/jquery.min.js"></script>
         <script>
             $.get("navbar.html", function(data){
                 $(".nav-placeholder").replaceWith(data);
             });
-        </script>
+        </script>  
     </head>
     <body>
         <div class="nav-placeholder"></div>
@@ -21,7 +22,7 @@
                 Try out these brands!
             </p>
 
-            <div class="carousel" data-flickity='{"wrapAround": true}'>
+            <!-- <div class="carousel" data-flickity='{"wrapAround": true}'>
                 <a href="https://shop.lululemon.com" target="_blank">
                     <img id="lulu-logo" src="images/lululogo.jpeg">
                 </a>
@@ -45,8 +46,40 @@
                 <a href="https://www.aviatornation.com/" target="_blank">
                     <img src="images/aviator-nation-logo.avif">
                 </a>
+            </div> -->
+
+            <!--
+            css code for old flickity carousel
+            * { 
+              box-sizing: border-box; 
+            }
+
+            .carousel {
+              background: white;
+            }
+
+            .carousel img {
+              display: block;
+              height: 300px;
+              margin-right: 20px;
+            }
+            -->
+
+            <div id="splide" class="splide">
+                <div class="splide__track">
+                  <ul class="splide__list">
+                    <li class="splide__slide"><img src="images/lululogo.jpeg"></li>
+                    <li class="splide__slide"><img src="images/urban-outfitters-logo.png"></li>
+                    <li class="splide__slide"><img src="images/sol-de-janeiro-logo.png"></li>
+                    <li class="splide__slide"><img src="images/nike-logo.jpeg"></li>
+                    <li class="splide__slide"><img src="images/aerie-logo.jpeg"></li>
+                    <li class="splide__slide"><img src="images/aviator-nation-logo.avif"></li>
+                  </ul>
+                </div>
             </div>
         </div>
         <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/js/splide.min.js"></script>
+        <script src="./scripts/carousel.js"></script>
     </body>
 </html>
