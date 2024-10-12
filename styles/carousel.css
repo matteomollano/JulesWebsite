@@ -2,10 +2,10 @@
   padding: 20px 0;
 }
 
-.splide__slide {
+.splide__slide, .splide__slide a {
   display: flex;       
   justify-content: center;
-  align-items: center;  
+  align-items: center;
 }
 
 .splide__slide {
@@ -14,7 +14,7 @@
     width: 70%;
     border-radius: 8px;
     transition: transform 400ms;
-    transform: scale(.9);
+    transform: scale(.8);
     transform-origin: center center;
   }
 }
