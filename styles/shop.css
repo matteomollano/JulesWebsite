@@ -1,6 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Bellota:ital@1&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Bellota:ital@1&family=Nanum+Pen+Script&family=Quicksand:wght@600&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Protest+Riot&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Playwrite+GB+S:ital@0;1&display=swap');
 
 p {
     margin: 0;
@@ -11,13 +12,25 @@ p {
     grid-template-columns: 1fr 1fr 1fr;
 }
 
+@media (max-width: 991px) {
+    .grid, .favorites-grid {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media (max-width: 701px) {
+    .grid, .favorites-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
 .website-link {
     display: flex;
     flex-direction: column;
     align-items: center;
     border-style: solid;
     border-width: 1px;
-    border-color: black;
+    border-color: lightgray;
     padding: 10px;
     margin: 3px;
 }
@@ -71,7 +84,8 @@ p {
 }
 
 .favorites-header {
-    font-family: "Protest Riot";
+    /* font-family: "Protest Riot"; */
+    font-family: 'Playwrite GB S';
     font-size: 35px;
     text-align: center;
     margin: 0px;
