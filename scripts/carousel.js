@@ -14,6 +14,11 @@ document.addEventListener('DOMContentLoaded', function () {
         1440: {
           perPage: 1,
           padding: '30%'
+        },
+        // for mobile screens, show 1 item per page and reduce padding
+        768: {
+          perPage: 1,
+          padding: '10%'
         }
       }
     }).mount();
