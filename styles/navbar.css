@@ -4,22 +4,60 @@ h1 {
     text-align: center;
     font-family: 'Socake', sans-serif;
     font-size: 40px;
-    color: #ff539b;
+    /* color: #ff539b; */
+    color: black;
 
     padding-top: 20px;
+    padding-bottom: 10px;
     margin-bottom: 0px;
 }
 
 #brand {
     font-family: 'Socake', sans-serif;
     font-size: 30px;
-    color: #ff539b;
+    /* color: #ff539b; */
+    color: white;
+    padding-top: 10px;
+}
+
+#greys-anatamy {
+    background-color: #efefef;
+}
+
+#navebar {
+    padding-top: 0px;
+    padding-bottom: 0px;
+}
+
+
+/* make everything bigger on a phone */
+@media (max-width: 501px) {
+    #bottom-navbar {
+        padding-top: 20px;
+        padding-bottom: 20px;
+    }
+    #brand {
+        font-size: 45px;
+    }
 }
 
 @media (max-width: 991px) {
     h1 {
         display: none;
     }
+
+    /* code for white background for hamburger dropdown */
+    /* .container-fluid {
+        padding-left: 0px;
+        padding-right: 0px;
+    }
+    .navbar {
+        padding: 0px;
+    }
+    .navbar-collapse {
+        background-color: #f8f9fa;
+        padding: 10px;
+    } */
 }
 
 @media (min-width: 992px) {
@@ -37,44 +75,55 @@ h1 {
     margin-right: 12px;
     margin-top: 7px;
     margin-bottom: 7px;
+    /* color: black; */
+    color:white;
+    background-color: black;
 }
 
 #home-page {
-    background-color: #FF9090;
+    /* background-color: #FF9090; */
     width: 72px;
 }
 
 #shop {
-    background-color: #FFD166;
+    /* background-color: #FFD166; */
     width: 67px;
 }
 
 #favorites {
-    background-color: lightblue;
+    /* background-color: lightblue; */
     width: 95px;
 }
 
 #locations {
-    background-color: lemonchiffon;
+    /* background-color: lemonchiffon; */
     width: 100px;
 }
 
 #all-about-juliet {
-    background-color: #ecd7ff;
+    /* background-color: #ecd7ff; */
     width: 134px;
 }
 
 #customer-service {
-    background-color: #DEF0B6;
+    /* background-color: #DEF0B6; */
     width: 160px;
 }
 
 #donations {
-    background-color: #72C7AE;
+    /* background-color: #72C7AE; */
     width: 100px;
 }
 
 #music {
-    background-color: #8390FA;
+    /* background-color: #8390FA; */
     width: 70px;
+}
+
+/* #top-navbar {
+    background-color: gray;
+} */
+
+#bottom-navbar {
+    background-color: black;
 }
