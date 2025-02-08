@@ -1,12 +1,12 @@
 // shop.js
 
-function toggleFavorite(itemName, itemImgSrc, itemImgId, itemWebsiteLink, itemWebsiteName) {
+function toggleFavorite(dataProductId, itemName, itemImgSrc, itemImgId, itemWebsiteLink, itemWebsiteName) {
     // Retrieve existing favorites from local storage or initialize an empty object
     const favorites = JSON.parse(localStorage.getItem('favorites')) || {};
 
     // If the item is not in favorites, create a new entry with default properties
-    if (!favorites[itemName]) {
-        favorites[itemName] = {
+    if (!favorites[dataProductId]) {
+        favorites[dataProductId] = {
             productName: itemName, // Set the actual product name
             productImgName: itemImgSrc, // Set the image source URL
             productImgId: itemImgId,
@@ -16,7 +16,7 @@ function toggleFavorite(itemName, itemImgSrc, itemImgId, itemWebsiteLink, itemWe
         };
     } else {
         // Toggle the favorited state
-        favorites[itemName].favorited = !favorites[itemName].favorited;
+        favorites[dataProductId].favorited = !favorites[dataProductId].favorited;
     }
 
     // Save the updated favorites back to local storage
@@ -29,11 +29,11 @@ function applyFavorites() {
     const heartButtons = document.querySelectorAll('.favorites-button');
 
     for (let button of heartButtons) {
-        // use the item name as the item's id
-        const itemName = button.closest('.website-link').querySelector('.product-name').textContent.trim();
+        // use the data-product-id as the item's id
+        const dataProductId = button.closest('.website-link').getAttribute('data-product-id');
 
-        if (favorites[itemName]) {
-            if (favorites[itemName].favorited) {
+        if (favorites[dataProductId]) {
+            if (favorites[dataProductId].favorited) {
                 // apply the red style
                 button.querySelector('.clear-heart').setAttribute('src', "images/heart-red.png");
             }
@@ -51,12 +51,13 @@ document.addEventListener('DOMContentLoaded', () => {
 
     for (let button of heartButtons) {
         button.onclick = function() {
+            const dataProductId = button.closest('.website-link').getAttribute('data-product-id');
             const itemName = button.closest('.website-link').querySelector('.product-name').textContent.trim();
             const itemImgSrc = button.closest('.website-link').querySelector('.product-image').getAttribute('src');
             const itemImgId = button.closest('.website-link').querySelector('.product-image').getAttribute('id');
             const itemWebsiteLink = button.closest('.website-link').querySelector('.website-button').getAttribute('href');
             const itemWebsiteName = button.closest('.website-link').querySelector('.website-button').textContent.trim();
-            toggleFavorite(itemName, itemImgSrc, itemImgId, itemWebsiteLink, itemWebsiteName);
+            toggleFavorite(dataProductId, itemName, itemImgSrc, itemImgId, itemWebsiteLink, itemWebsiteName);
             applyFavorites(); // Update favorites on click
         }
     }
