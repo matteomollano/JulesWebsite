@@ -1,5 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Signika&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Amatic+SC:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Sorts+Mill+Goudy:ital@0;1&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=PT+Serif:ital,wght@0,400;0,700;1,400;1,700&display=swap');
 
 .title {
     font-family: Amatic SC;
@@ -10,4 +12,65 @@
 
 .page {
     margin-top: 10px;
+}
+
+.gift {
+    display: flex;
+}
+
+.left-section > img {
+    height: 350px;
+}
+
+.left-section {
+    background-color: lightblue;
+}
+
+.right-section {
+    background-color: rgb(252, 231, 241);
+    width: 350px;
+    padding: 20px;
+}
+
+.gift-name {
+    font-family: "Sorts Mill Goudy", serif;
+    font-weight: bolder;
+    font-style: normal;
+    font-size: 22px;
+}
+
+.gift-price {
+    font-family: "PT Serif", serif;
+    font-weight: lighter;
+    font-style: italic;
+    font-size: 18px;
+}
+
+.gift-desc {
+    font-family: "Sorts Mill Goudy", serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 16px;
+}
+
+.gift-button {
+    font-family: "PT Serif", serif;
+    font-weight: lighter;
+    font-style: normal;
+    font-size: 13px;
+
+    padding: 12px 75px;
+    color: black;
+    text-decoration-style: dotted;
+    text-transform: uppercase;
+
+    border: black dotted 1px;
+    border-radius: 2px;
+
+    transition: box-shadow .3s;
+    box-shadow: rgb(0, 0, 0) 3px 4px 0px 0px;
+}
+
+.gift-button:hover {
+    box-shadow: rgb(0, 0, 0) 5px 6px 0px 0px;
 }
